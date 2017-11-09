@@ -1,4 +1,18 @@
-<table>
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<body ng-app="myApp" ng-controller="userCtrl">
+
+<div class="container">
+
+<h3>coffee</h3>
+
+<table class="table table-striped">
+  <thead><tr>
+    <tr><td>Reviews for:{{item.name}}</td></tr>
+  </tr></thead>
+  <tbody><tr>
         <tr><td>Reviews:</td><td>Brand:</td><td>Coffee Title:</td><td>Country:</td></tr>
         <tr ng-repeat="x in coffee">
             <td><a ng-href="#!/view{{ x.id }}/get/{{ x.id-1 }}">Reviews:</a></td>
@@ -6,5 +20,8 @@
             <td>{{x.name}}</td>
             <td>{{x.country}}</td>
         </tr>
+  </tr></tbody>
 </table>
-  
+
+</body>
+</html>

@@ -1,14 +1,23 @@
-<table>
-        <tr><td>Reviews for:{{item.name}}</td></tr>
-        <tr><td>Reviewer</td><td ng-repeat="c in item.reviews" ng-bind="c.reviewer">{{c}}</td></tr>
-        
-        <tr><td>Comment:</td><td ng-repeat="c in item.reviews" ng-bind="c.comment">{{c}}</td></tr>
-        
-        <tr><td>Rating:</td><td ng-repeat="c in item.reviews" ng-bind="c.rating">{{c}}</td></tr>
-        
-        
-        
-        
-        
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<body ng-app="myApp" ng-controller="userCtrl">
 
+<div class="container">
+
+<h3>coffee</h3>
+
+<table class="table table-striped">
+  <thead><tr>
+    <tr><td>Reviews for:{{item.name}}</td></tr>
+  </tr></thead>
+  <tbody><tr>
+    <tr><td>Reviewer</td><td ng-repeat="c in item.reviews" ng-bind="c.reviewer">{{c}}</td></tr>
+    <tr><td>Comment:</td><td ng-repeat="c in item.reviews" ng-bind="c.comment">{{c}}</td></tr>
+    <tr><td>Rating:</td><td ng-repeat="c in item.reviews" ng-bind="c.rating">{{c}}</td></tr>
+  </tr></tbody>
 </table>
+
+</body>
+</html>
