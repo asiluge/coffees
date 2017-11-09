@@ -1,0 +1,16 @@
+[{
+    "id": "AD01",
+    "imgurl": "images/banner_01.jpg",
+      "bannerurl": [
+        {"bannerimgurl": "images/banner_04.jpg"},
+        {"bannerimgurl": "images/banner_05.jpg"}],
+    "status": "0"
+    },
+    {
+    "id": "AD02",
+    "imgurl": "images/banner_02.jpg",
+      "bannerurl": [
+        {"bannerimgurl": "images/banner_04.jpg"},
+        {"bannerimgurl": "images/banner_03.jpg"}],
+    "status": "0"
+    }]

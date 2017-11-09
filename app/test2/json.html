@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--定义AngularJS app-->
+<html ng-app="UserMgt">
+<head>
+    <meta charset="utf-8"/>
+    <title>user mgt demo </title>
+</head>
+<body>
+
+<h1>用户管理Demo</h1>
+<!--使用ng-show，表明我们使用路由控制来管理页面之间的跳转
+-->
+<div ng-view>
+    loading...
+</div><!--视图模板容器-->
+
+<!--引入ng-app所需的js文件-->
+<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="../bower_components/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="mgt_controller.js"></script>
+</body>
+</html>

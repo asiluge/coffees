@@ -1,0 +1,14 @@
+<table border="1"> 
+        <tr>
+        <!--设置表头-->
+            <td>用户名</td>
+            <td>性别</td>
+            <td>邮箱</td>
+        </tr>
+        <!--使用ng-repeat，遍历所有的user-->
+        <tr ng-repeat="user in users"> 
+                <td>{{user.username}}</td>
+            <td>{{user.gender}}</td>
+            <td>{{user.email}}</td>
+        </tr>
+    </table>

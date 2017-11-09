@@ -1,20 +1,19 @@
 'use strict';
 
-angular.module('myApp.view2', ['ngRoute'])
+angular.module('myApp.view4', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider
-  .when('/view2', {
-    templateUrl: 'view2/view2.html',
-    controller: 'View2Ctrl'
+  $routeProvider.when('/view4', {
+    templateUrl: 'view4/view4.html',
+    controller: 'view4Ctrl'
   })
-  .when('/view2/get/:id', { 
+  .when('/view4/get/:id', { 
     controller: GetController, 
-    templateUrl: "view2/view2.html"
+    templateUrl: "view4/view4.html"
 });
 }])
 
-.controller('View2Ctrl', [function() {
+.controller('view4Ctrl', [function() {
 
 }]);
 

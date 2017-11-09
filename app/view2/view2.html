@@ -1,5 +1,14 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<table>
+        <tr><td>Reviews for:{{item.name}}</td></tr>
+        <tr><td>Reviewer</td><td ng-repeat="c in item.reviews" ng-bind="c.reviewer">{{c}}</td></tr>
+        
+        <tr><td>Comment:</td><td ng-repeat="c in item.reviews" ng-bind="c.comment">{{c}}</td></tr>
+        
+        <tr><td>Rating:</td><td ng-repeat="c in item.reviews" ng-bind="c.rating">{{c}}</td></tr>
+        
+        
+        
+        
+        
+
+</table>

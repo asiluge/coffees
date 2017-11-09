@@ -1,0 +1,10 @@
+<table>
+        <tr><td>Reviews:</td><td>Brand:</td><td>Coffee Title:</td><td>Country:</td></tr>
+        <tr ng-repeat="x in coffee">
+            <td><a ng-href="#!/view{{ x.id }}/get/{{ x.id-1 }}">Reviews:</a></td>
+            <td>{{x.brand}}</td>
+            <td>{{x.name}}</td>
+            <td>{{x.country}}</td>
+        </tr>
+</table>
+  

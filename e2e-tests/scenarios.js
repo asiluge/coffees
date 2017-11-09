@@ -25,7 +25,6 @@ describe('my app', function() {
 
   });
 
-
   describe('view2', function() {
 
     beforeEach(function() {
@@ -39,4 +38,18 @@ describe('my app', function() {
     });
 
   });
+
+  describe('coffees', function() {
+    
+        beforeEach(function() {
+          browser.get('index.html#!/coffees');
+        });
+    
+    
+        it('should render coffees when user navigates to /coffees', function() {
+          expect(element.all(by.css('[ng-view] p')).first().getText()).
+            toMatch(/partial for coffees/);
+        });
+    
+      });
 });
